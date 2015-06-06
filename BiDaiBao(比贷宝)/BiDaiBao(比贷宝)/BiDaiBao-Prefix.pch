@@ -9,6 +9,28 @@
 #ifndef BiDaiBao_PrefixHeader_pch
 #define BiDaiBao_PrefixHeader_pch
 
+
+#ifdef __OBJC__
+	/**
+	 *  引入公共框架
+	 */
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+	
+	/**
+	*  第三方框架
+	*/
+	#import "AFNetworking.h"
+	#import "AFHTTPRequestOperation.h"
+	
+	/**
+	 *  类别
+	 */
+	#import "UIView+Extensions.h"
+	
+#endif
+
+
 //---------------------打印日志--------------------------
 /**
  *  常规日志
@@ -176,7 +198,7 @@
  */
 #define MAIN_BUNDLE ([NSBundle mainBundle])
 //Bundle文件路径
-#define FilePathInBundleWithPathAndType(path,type) ([MAIN_BUNDLE pathForResource:path ofType:type])
+#define FilePathInBundleWithNameAndType(name,type) ([MAIN_BUNDLE pathForResource:name ofType:type])
 
 //----------------------路径----------------------------
 

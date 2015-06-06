@@ -16,19 +16,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	
-	ZXLLOG(@"HelloWorld");
-	
-	ZXLLOGRect(self.window.frame);
-	
-	ZXLLOGSize(self.window.frame.size);
-	
-	ZXLLOGPoint(self.window.frame.origin);
-	
-	
-	
-	
-	
 	return YES;
 }
 
