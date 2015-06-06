@@ -81,9 +81,8 @@
 			children = (
 				D8225DEB1B216CE900102B9A /* AppDelegate.h */,
 				D8225DEC1B216CE900102B9A /* AppDelegate.m */,
-				D8225DCF1B21524900102B9A /* Main.storyboard */,
-				D8225DD21B21524900102B9A /* Images.xcassets */,
 				D8225DD41B21524900102B9A /* LaunchScreen.xib */,
+				D8745B6F1B22CE5B0099D4EA /* Class */,
 				D8225DC51B21524900102B9A /* Supporting Files */,
 			);
 			path = "BiDaiBao(比贷宝)";
@@ -92,6 +91,7 @@
 		D8225DC51B21524900102B9A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D8225DD21B21524900102B9A /* Images.xcassets */,
 				D8225DC61B21524900102B9A /* Info.plist */,
 				D8225DC71B21524900102B9A /* main.m */,
 				D8225DEE1B216D5900102B9A /* BiDaiBao-Prefix.pch */,
@@ -114,6 +114,22 @@
 				D8225DE01B21524900102B9A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8745B6F1B22CE5B0099D4EA /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				D8745B701B22CE5B0099D4EA /* Framework */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		D8745B701B22CE5B0099D4EA /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				D8225DCF1B21524900102B9A /* Main.storyboard */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +262,7 @@
 				D8225DD01B21524900102B9A /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		D8225DD41B21524900102B9A /* LaunchScreen.xib */ = {
