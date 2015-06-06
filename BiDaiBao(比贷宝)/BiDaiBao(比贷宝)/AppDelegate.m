@@ -16,7 +16,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	// Override point for customization after application launch.
+	
+	ZXLLOG(@"HelloWorld");
+	
+	ZXLLOGRect(self.window.frame);
+	
+	ZXLLOGSize(self.window.frame.size);
+	
+	ZXLLOGPoint(self.window.frame.origin);
+	
+	
+	
+	
+	
 	return YES;
 }
 

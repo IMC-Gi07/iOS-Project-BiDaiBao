@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D8225DC81B21524900102B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8225DC71B21524900102B9A /* main.m */; };
-		D8225DCB1B21524900102B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8225DCA1B21524900102B9A /* AppDelegate.m */; };
 		D8225DD11B21524900102B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8225DCF1B21524900102B9A /* Main.storyboard */; };
 		D8225DD31B21524900102B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8225DD21B21524900102B9A /* Images.xcassets */; };
 		D8225DD61B21524900102B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8225DD41B21524900102B9A /* LaunchScreen.xib */; };
 		D8225DE21B21524900102B9A /* BiDaiBao_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8225DE11B21524900102B9A /* BiDaiBao_____Tests.m */; };
+		D8225DED1B216CE900102B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8225DEC1B216CE900102B9A /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,14 +29,15 @@
 		D8225DC21B21524900102B9A /* BiDaiBao(比贷宝).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BiDaiBao(比贷宝).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8225DC61B21524900102B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8225DC71B21524900102B9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D8225DC91B21524900102B9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D8225DCA1B21524900102B9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D8225DD01B21524900102B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8225DD21B21524900102B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D8225DD51B21524900102B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D8225DDB1B21524900102B9A /* BiDaiBao(比贷宝)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BiDaiBao(比贷宝)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8225DE01B21524900102B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8225DE11B21524900102B9A /* BiDaiBao_____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BiDaiBao_____Tests.m"; sourceTree = "<group>"; };
+		D8225DEB1B216CE900102B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D8225DEC1B216CE900102B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8225DEE1B216D5900102B9A /* BiDaiBao-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BiDaiBao-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +79,8 @@
 		D8225DC41B21524900102B9A /* BiDaiBao(比贷宝) */ = {
 			isa = PBXGroup;
 			children = (
-				D8225DC91B21524900102B9A /* AppDelegate.h */,
-				D8225DCA1B21524900102B9A /* AppDelegate.m */,
+				D8225DEB1B216CE900102B9A /* AppDelegate.h */,
+				D8225DEC1B216CE900102B9A /* AppDelegate.m */,
 				D8225DCF1B21524900102B9A /* Main.storyboard */,
 				D8225DD21B21524900102B9A /* Images.xcassets */,
 				D8225DD41B21524900102B9A /* LaunchScreen.xib */,
@@ -93,6 +94,7 @@
 			children = (
 				D8225DC61B21524900102B9A /* Info.plist */,
 				D8225DC71B21524900102B9A /* main.m */,
+				D8225DEE1B216D5900102B9A /* BiDaiBao-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -214,7 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8225DCB1B21524900102B9A /* AppDelegate.m in Sources */,
+				D8225DED1B216CE900102B9A /* AppDelegate.m in Sources */,
 				D8225DC81B21524900102B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +339,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BiDaiBao(比贷宝)/BiDaiBao-Prefix.pch";
 				INFOPLIST_FILE = "BiDaiBao(比贷宝)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -347,6 +351,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BiDaiBao(比贷宝)/BiDaiBao-Prefix.pch";
 				INFOPLIST_FILE = "BiDaiBao(比贷宝)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,6 +412,7 @@
 				D8225DE71B21524900102B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8225DE81B21524900102B9A /* Build configuration list for PBXNativeTarget "BiDaiBao(比贷宝)Tests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +421,7 @@
 				D8225DEA1B21524900102B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
