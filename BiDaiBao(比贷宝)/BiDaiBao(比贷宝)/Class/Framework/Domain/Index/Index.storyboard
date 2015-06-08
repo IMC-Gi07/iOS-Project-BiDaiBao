@@ -7,7 +7,7 @@
         <!--Root View Controller-->
         <scene sceneID="qfo-qM-ov8">
             <objects>
-                <tableViewController id="SRI-bM-lwE" sceneMemberID="viewController">
+                <tableViewController id="SRI-bM-lwE" customClass="BDBIndexViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="kQe-hE-8dv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,12 +30,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kWq-Jd-CVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="536" y="351"/>
+            <point key="canvasLocation" x="247" y="351"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kKd-sS-R3P">
             <objects>
-                <navigationController id="YhE-W3-hd1" sceneMemberID="viewController">
+                <navigationController id="YhE-W3-hd1" customClass="ZXLNavigationController" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="L7L-Pl-9ZB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

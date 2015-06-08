@@ -27,6 +27,9 @@
 	 *  类别
 	 */
 	#import "UIView+Extensions.h"
+	#import "UIBarButtonItem+Extensions.h"
+	#import "UIButton+Extensions.h"
+	
 	
 #endif
 
@@ -144,37 +147,40 @@
 
 //----------------------颜色类---------------------------
 // rgb颜色转换（16进制->10进制）
-#define ColorWithRGB16Radix(rgbValue) ([UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0])
+#define UIColorWithRGB16Radix(rgbValue) ([UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0])
 
 // 获取RGB颜色
-#define ColorWithRGBA(r,g,b,a) ([UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a])
+#define UIColorWithRGBA(r,g,b,a) ([UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a])
 
-#define ColorWithRGB(r,g,b) ColorWithRGBA(r,g,b,1.0f)
+#define UIColorWithRGB(r,g,b) (UIColorWithRGBA(r,g,b,1.0f))
+
+#define UIColorWithName(name) ([UIColor name##Color])
 
 //背景色
 //#define BACKGROUND_COLOR [UIColor colorWithRed:242.0/255.0 green:236.0/255.0 blue:231.0/255.0 alpha:1.0]
 
 //清除背景色
-#define ColorWithNULL ([UIColor clearColor])
+#define UIColorWithNULL ([UIColor clearColor])
 //----------------------颜色类--------------------------
 
 
 //----------------------图片----------------------------
 //读取本地图片
-#define ImageWithPathAndType(path,type) ([UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:path ofType:type]])
+#define UIImageWithPathAndType(path,type) ([UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:path ofType:type]])
 
 //定义UIImage对象
-#define ImageWithPath(path) ([UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:path ofType:nil]])
+#define UIImageWithPath(path) ([UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:path ofType:nil]])
 
 //定义UIImage对象
-#define ImageWithName(name) ([UIImage imageNamed:name])
+#define UIImageWithName(name) ([UIImage imageNamed:name])
 
 //建议使用前两种宏定义,性能高于后者
 //----------------------图片----------------------------
 
 
 //----------------------字体----------------------------
-#define FontWithNameAndSize(name,size) ([UIFont fontWithName:name size:size])
+#define UIFontWithNameAndSize(name,size) ([UIFont fontWithName:name size:size])
+#define UIFontWithSize(size) ([UIFont systemFontOfSize:size])
 //----------------------字体----------------------------
 
 

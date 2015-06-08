@@ -34,7 +34,7 @@
         <!--Navigation Controller-->
         <scene sceneID="jGi-am-kVL">
             <objects>
-                <navigationController id="b3x-Zh-6gg" sceneMemberID="viewController">
+                <navigationController id="b3x-Zh-6gg" customClass="ZXLNavigationController" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h8t-gN-ce5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

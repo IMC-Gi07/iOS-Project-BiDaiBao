@@ -1,5 +1,5 @@
 //
-//  BDBIndexViewController.h
+//  ZXLNavigationController.h
 //  BiDaiBao(比贷宝)
 //
 //  Created by zhang xianglu on 15/6/7.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BDBIndexViewController : UITableViewController
+@interface ZXLNavigationController : UINavigationController
 
 @end

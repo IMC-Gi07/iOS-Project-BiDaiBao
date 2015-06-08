@@ -4,29 +4,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
-        <scene sceneID="2AG-3B-ewH">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jij-ul-CfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="hZu-C7-3Or" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Root View Controller" id="e7f-jN-y2l"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </tableViewController>
-            </objects>
-            <point key="canvasLocation" x="306" y="376"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pc4-R8-hvP">
             <objects>
-                <navigationController id="opW-hH-Hhi" sceneMemberID="viewController">
+                <navigationController id="opW-hH-Hhi" customClass="ZXLNavigationController" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YTL-42-W62">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="hZu-C7-3Or" kind="relationship" relationship="rootViewController" id="eed-m5-OAv"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SYJ-cO-iOm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

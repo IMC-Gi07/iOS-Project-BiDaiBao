@@ -36,9 +36,9 @@
 			UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:module[@"name"] bundle:nil];
 			
 			//普通icon
-			UIImage *iconImage = [ImageWithName(module[@"icon"]) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+			UIImage *iconImage = [UIImageWithName(module[@"icon"]) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 			//高亮icon
-			UIImage *iconHighlightedImage = [ImageWithName(module[@"icon_highlighted"]) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+			UIImage *iconHighlightedImage = [UIImageWithName(module[@"icon_highlighted"]) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 			
 			UIViewController *moduleInitViewController = [storyBoard instantiateInitialViewController];
 			moduleInitViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:module[@"title"] image:iconImage selectedImage:iconHighlightedImage];

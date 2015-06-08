@@ -41,7 +41,6 @@
 		D8745BCA1B22DA1B0099D4EA /* Modules.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8745BC91B22DA1B0099D4EA /* Modules.plist */; };
 		D8745BCD1B22DD710099D4EA /* BDBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8745BCC1B22DD710099D4EA /* BDBBaseViewController.m */; };
 		D8745BFD1B22E4BE0099D4EA /* BDBDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8745BE41B22E4BE0099D4EA /* BDBDiscoveryViewController.m */; };
-		D8745BFE1B22E4BE0099D4EA /* BDBIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8745BEA1B22E4BE0099D4EA /* BDBIndexViewController.m */; };
 		D8745BFF1B22E4BE0099D4EA /* BDBSubjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8745BF01B22E4BE0099D4EA /* BDBSubjectViewController.m */; };
 		D8745C001B22E4BE0099D4EA /* BDBWarningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8745BFA1B22E4BE0099D4EA /* BDBWarningViewController.m */; };
 		D8745C031B22E5360099D4EA /* BDBUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8745C021B22E5360099D4EA /* BDBUserViewController.m */; };
@@ -50,6 +49,11 @@
 		D8745C091B22E9AD0099D4EA /* Subject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8745C081B22E9AD0099D4EA /* Subject.storyboard */; };
 		D8745C0B1B22E9BD0099D4EA /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8745C0A1B22E9BD0099D4EA /* User.storyboard */; };
 		D8745C0D1B22E9CA0099D4EA /* Warning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8745C0C1B22E9CA0099D4EA /* Warning.storyboard */; };
+		D8745C7A1B24272E0099D4EA /* ZXLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8745C791B24272E0099D4EA /* ZXLNavigationController.m */; };
+		D8745C7D1B242F9F0099D4EA /* UIBarButtonItem+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8745C7C1B242F9F0099D4EA /* UIBarButtonItem+Extensions.m */; };
+		D8745C801B2434C30099D4EA /* UIButton+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8745C7F1B2434C30099D4EA /* UIButton+Extensions.m */; };
+		D8745C841B2448800099D4EA /* BDBIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8745C831B2448800099D4EA /* BDBIndexViewController.m */; };
+		D8745C871B244BD90099D4EA /* ZXLNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D8745C861B244BD90099D4EA /* ZXLNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,8 +137,6 @@
 		D8745BCC1B22DD710099D4EA /* BDBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBBaseViewController.m; sourceTree = "<group>"; };
 		D8745BE31B22E4BE0099D4EA /* BDBDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBDiscoveryViewController.h; sourceTree = "<group>"; };
 		D8745BE41B22E4BE0099D4EA /* BDBDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBDiscoveryViewController.m; sourceTree = "<group>"; };
-		D8745BE91B22E4BE0099D4EA /* BDBIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBIndexViewController.h; sourceTree = "<group>"; };
-		D8745BEA1B22E4BE0099D4EA /* BDBIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBIndexViewController.m; sourceTree = "<group>"; };
 		D8745BEF1B22E4BE0099D4EA /* BDBSubjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBSubjectViewController.h; sourceTree = "<group>"; };
 		D8745BF01B22E4BE0099D4EA /* BDBSubjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBSubjectViewController.m; sourceTree = "<group>"; };
 		D8745BF91B22E4BE0099D4EA /* BDBWarningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBWarningViewController.h; sourceTree = "<group>"; };
@@ -146,6 +148,16 @@
 		D8745C081B22E9AD0099D4EA /* Subject.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Subject.storyboard; sourceTree = "<group>"; };
 		D8745C0A1B22E9BD0099D4EA /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
 		D8745C0C1B22E9CA0099D4EA /* Warning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Warning.storyboard; sourceTree = "<group>"; };
+		D8745C781B24272E0099D4EA /* ZXLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXLNavigationController.h; path = ../../Extension/ZXLNavigationController.h; sourceTree = "<group>"; };
+		D8745C791B24272E0099D4EA /* ZXLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXLNavigationController.m; path = ../../Extension/ZXLNavigationController.m; sourceTree = "<group>"; };
+		D8745C7B1B242F9F0099D4EA /* UIBarButtonItem+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extensions.h"; sourceTree = "<group>"; };
+		D8745C7C1B242F9F0099D4EA /* UIBarButtonItem+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extensions.m"; sourceTree = "<group>"; };
+		D8745C7E1B2434C30099D4EA /* UIButton+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extensions.h"; sourceTree = "<group>"; };
+		D8745C7F1B2434C30099D4EA /* UIButton+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extensions.m"; sourceTree = "<group>"; };
+		D8745C821B2448800099D4EA /* BDBIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDBIndexViewController.h; path = "BiDaiBao(比贷宝)/Class/Domain/Index/Controller/BDBIndexViewController.h"; sourceTree = SOURCE_ROOT; };
+		D8745C831B2448800099D4EA /* BDBIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDBIndexViewController.m; path = "BiDaiBao(比贷宝)/Class/Domain/Index/Controller/BDBIndexViewController.m"; sourceTree = SOURCE_ROOT; };
+		D8745C851B244BD90099D4EA /* ZXLNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXLNavigationBar.h; sourceTree = "<group>"; };
+		D8745C861B244BD90099D4EA /* ZXLNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXLNavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +335,10 @@
 			children = (
 				D8745BC21B22D1F20099D4EA /* UIView+Extensions.h */,
 				D8745BC31B22D1F20099D4EA /* UIView+Extensions.m */,
+				D8745C7B1B242F9F0099D4EA /* UIBarButtonItem+Extensions.h */,
+				D8745C7C1B242F9F0099D4EA /* UIBarButtonItem+Extensions.m */,
+				D8745C7E1B2434C30099D4EA /* UIButton+Extensions.h */,
+				D8745C7F1B2434C30099D4EA /* UIButton+Extensions.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -343,6 +359,8 @@
 			children = (
 				D8745BCB1B22DD710099D4EA /* BDBBaseViewController.h */,
 				D8745BCC1B22DD710099D4EA /* BDBBaseViewController.m */,
+				D8745C781B24272E0099D4EA /* ZXLNavigationController.h */,
+				D8745C791B24272E0099D4EA /* ZXLNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -357,6 +375,8 @@
 		D8745BC81B22D9B00099D4EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D8745C851B244BD90099D4EA /* ZXLNavigationBar.h */,
+				D8745C861B244BD90099D4EA /* ZXLNavigationBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -422,8 +442,8 @@
 		D8745BE81B22E4BE0099D4EA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D8745BE91B22E4BE0099D4EA /* BDBIndexViewController.h */,
-				D8745BEA1B22E4BE0099D4EA /* BDBIndexViewController.m */,
+				D8745C821B2448800099D4EA /* BDBIndexViewController.h */,
+				D8745C831B2448800099D4EA /* BDBIndexViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -656,6 +676,7 @@
 				D8745B8A1B22D12C0099D4EA /* AFSecurityPolicy.m in Sources */,
 				D8745BB21B22D1360099D4EA /* NSData+ImageContentType.m in Sources */,
 				D8745B861B22D12C0099D4EA /* AFHTTPRequestOperation.m in Sources */,
+				D8745C801B2434C30099D4EA /* UIButton+Extensions.m in Sources */,
 				D8745B8E1B22D12C0099D4EA /* AFURLSessionManager.m in Sources */,
 				D8745BBA1B22D1360099D4EA /* UIButton+WebCache.m in Sources */,
 				D8745BB71B22D1360099D4EA /* SDWebImageDownloaderOperation.m in Sources */,
@@ -672,16 +693,19 @@
 				D8745B881B22D12C0099D4EA /* AFHTTPSessionManager.m in Sources */,
 				D8745B871B22D12C0099D4EA /* AFHTTPRequestOperationManager.m in Sources */,
 				D8745BFD1B22E4BE0099D4EA /* BDBDiscoveryViewController.m in Sources */,
+				D8745C7A1B24272E0099D4EA /* ZXLNavigationController.m in Sources */,
 				D8745BB61B22D1360099D4EA /* SDWebImageDownloader.m in Sources */,
-				D8745BFE1B22E4BE0099D4EA /* BDBIndexViewController.m in Sources */,
 				D8745BBE1B22D1360099D4EA /* UIImageView+HighlightedWebCache.m in Sources */,
 				D8745BB51B22D1360099D4EA /* SDWebImageDecoder.m in Sources */,
 				D8745BC41B22D1F20099D4EA /* UIView+Extensions.m in Sources */,
 				D8745C001B22E4BE0099D4EA /* BDBWarningViewController.m in Sources */,
+				D8745C871B244BD90099D4EA /* ZXLNavigationBar.m in Sources */,
 				D8745BBD1B22D1360099D4EA /* UIImage+WebP.m in Sources */,
 				D8745BB81B22D1360099D4EA /* SDWebImageManager.m in Sources */,
 				D8745B891B22D12C0099D4EA /* AFNetworkReachabilityManager.m in Sources */,
 				D8225DC81B21524900102B9A /* main.m in Sources */,
+				D8745C7D1B242F9F0099D4EA /* UIBarButtonItem+Extensions.m in Sources */,
+				D8745C841B2448800099D4EA /* BDBIndexViewController.m in Sources */,
 				D8745BB31B22D1360099D4EA /* SDImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
