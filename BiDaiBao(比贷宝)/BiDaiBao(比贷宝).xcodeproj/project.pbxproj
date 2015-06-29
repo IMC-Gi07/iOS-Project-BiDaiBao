@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15CE247E1B415192006114EB /* BDBDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE247C1B415192006114EB /* BDBDiscoveryViewController.m */; };
+		15CE247F1B415193006114EB /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CE247D1B415192006114EB /* Discovery.storyboard */; };
 		D80895B01B25C2E500A7B1A4 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D80895AD1B25C2E500A7B1A4 /* FLAnimatedImage.m */; };
 		D80895B11B25C2E500A7B1A4 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D80895AF1B25C2E500A7B1A4 /* FLAnimatedImageView.m */; };
 		D813EDE31B2FC3E400606D60 /* BDBFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D813EDE21B2FC3E400606D60 /* BDBFeatureViewController.m */; };
@@ -92,8 +94,6 @@
 		D874CCF31B2EC3EA00CFCE57 /* Index.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D874CCF21B2EC3EA00CFCE57 /* Index.storyboard */; };
 		D874CCF81B2EC50700CFCE57 /* BDBNoticeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D874CCF61B2EC50700CFCE57 /* BDBNoticeTableViewCell.m */; };
 		D874CCF91B2EC50700CFCE57 /* BDBNoticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D874CCF71B2EC50700CFCE57 /* BDBNoticeTableViewCell.xib */; };
-		D874CCFB1B2EC5A400CFCE57 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D874CCFA1B2EC5A400CFCE57 /* Discovery.storyboard */; };
-		D874CD011B2EC68C00CFCE57 /* BDBDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D874CD001B2EC68C00CFCE57 /* BDBDiscoveryViewController.m */; };
 		D874CD031B2EC78200CFCE57 /* Subject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D874CD021B2EC78200CFCE57 /* Subject.storyboard */; };
 		D874CD051B2EC79C00CFCE57 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D874CD041B2EC79C00CFCE57 /* User.storyboard */; };
 		D874CD071B2EC7AE00CFCE57 /* Warning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D874CD061B2EC7AE00CFCE57 /* Warning.storyboard */; };
@@ -110,6 +110,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15CE247B1B415192006114EB /* BDBDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBDiscoveryViewController.h; sourceTree = "<group>"; };
+		15CE247C1B415192006114EB /* BDBDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBDiscoveryViewController.m; sourceTree = "<group>"; };
+		15CE247D1B415192006114EB /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
 		D80895AC1B25C2E500A7B1A4 /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
 		D80895AD1B25C2E500A7B1A4 /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
 		D80895AE1B25C2E500A7B1A4 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
@@ -278,9 +281,6 @@
 		D874CCF51B2EC50700CFCE57 /* BDBNoticeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBNoticeTableViewCell.h; sourceTree = "<group>"; };
 		D874CCF61B2EC50700CFCE57 /* BDBNoticeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBNoticeTableViewCell.m; sourceTree = "<group>"; };
 		D874CCF71B2EC50700CFCE57 /* BDBNoticeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDBNoticeTableViewCell.xib; sourceTree = "<group>"; };
-		D874CCFA1B2EC5A400CFCE57 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
-		D874CCFF1B2EC68C00CFCE57 /* BDBDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBDiscoveryViewController.h; sourceTree = "<group>"; };
-		D874CD001B2EC68C00CFCE57 /* BDBDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBDiscoveryViewController.m; sourceTree = "<group>"; };
 		D874CD021B2EC78200CFCE57 /* Subject.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Subject.storyboard; sourceTree = "<group>"; };
 		D874CD041B2EC79C00CFCE57 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
 		D874CD061B2EC7AE00CFCE57 /* Warning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Warning.storyboard; sourceTree = "<group>"; };
@@ -304,6 +304,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15CE247A1B415192006114EB /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				15CE247B1B415192006114EB /* BDBDiscoveryViewController.h */,
+				15CE247C1B415192006114EB /* BDBDiscoveryViewController.m */,
+				15CE247D1B415192006114EB /* Discovery.storyboard */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
 		D80895AB1B25C2E500A7B1A4 /* FLAnimatedImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -722,48 +732,14 @@
 		D874CCC71B2EC37700CFCE57 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				15CE247A1B415192006114EB /* Discovery */,
 				D813EDDD1B2FC3AD00606D60 /* Feature */,
-				D874CCC81B2EC37700CFCE57 /* Discovery */,
 				D874CCCE1B2EC37700CFCE57 /* Index */,
 				D874CCD81B2EC37700CFCE57 /* Subject */,
 				D874CCDE1B2EC37700CFCE57 /* User */,
 				D874CCE21B2EC37700CFCE57 /* Warning */,
 			);
 			path = Domain;
-			sourceTree = "<group>";
-		};
-		D874CCC81B2EC37700CFCE57 /* Discovery */ = {
-			isa = PBXGroup;
-			children = (
-				D874CCFA1B2EC5A400CFCE57 /* Discovery.storyboard */,
-				D874CCC91B2EC37700CFCE57 /* Controller */,
-				D874CCCC1B2EC37700CFCE57 /* Model */,
-				D874CCCD1B2EC37700CFCE57 /* View */,
-			);
-			path = Discovery;
-			sourceTree = "<group>";
-		};
-		D874CCC91B2EC37700CFCE57 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D874CCFF1B2EC68C00CFCE57 /* BDBDiscoveryViewController.h */,
-				D874CD001B2EC68C00CFCE57 /* BDBDiscoveryViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D874CCCC1B2EC37700CFCE57 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D874CCCD1B2EC37700CFCE57 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		D874CCCE1B2EC37700CFCE57 /* Index */ = {
@@ -980,8 +956,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15CE247F1B415193006114EB /* Discovery.storyboard in Resources */,
 				D859C4771B33C4BC009EFDE0 /* global_loaddata_icon.gif in Resources */,
-				D874CCFB1B2EC5A400CFCE57 /* Discovery.storyboard in Resources */,
 				D81FB3521B3CF5CA0063AFC6 /* MJRefresh.bundle in Resources */,
 				D874CD071B2EC7AE00CFCE57 /* Warning.storyboard in Resources */,
 				D874CD031B2EC78200CFCE57 /* Subject.storyboard in Resources */,
@@ -1022,7 +998,6 @@
 				D8745B8A1B22D12C0099D4EA /* AFSecurityPolicy.m in Sources */,
 				D8745BB21B22D1360099D4EA /* NSData+ImageContentType.m in Sources */,
 				D81FB3501B3CF5CA0063AFC6 /* MJRefreshNormalHeader.m in Sources */,
-				D874CD011B2EC68C00CFCE57 /* BDBDiscoveryViewController.m in Sources */,
 				D81FB3461B3CF5CA0063AFC6 /* MJRefreshComponent.m in Sources */,
 				D8745B861B22D12C0099D4EA /* AFHTTPRequestOperation.m in Sources */,
 				D81FB3451B3CF5CA0063AFC6 /* MJRefreshBackFooter.m in Sources */,
@@ -1053,6 +1028,7 @@
 				D81FB36F1B3CF6320063AFC6 /* NSObject+MJProperty.m in Sources */,
 				D8745C7A1B24272E0099D4EA /* ZXLNavigationController.m in Sources */,
 				D81FB3551B3CF5CA0063AFC6 /* UIScrollView+MJRefresh.m in Sources */,
+				15CE247E1B415192006114EB /* BDBDiscoveryViewController.m in Sources */,
 				D8745BB61B22D1360099D4EA /* SDWebImageDownloader.m in Sources */,
 				D8745BBE1B22D1360099D4EA /* UIImageView+HighlightedWebCache.m in Sources */,
 				D80895B11B25C2E500A7B1A4 /* FLAnimatedImageView.m in Sources */,
