@@ -19,7 +19,7 @@
 
 
 
-@interface BDBIndexViewController ()
+@interface BDBIndexViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong) BDBIndexResponseModel *indexModel;
 
@@ -34,10 +34,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIImage *headerImage = [UIImage imageNamed:@"风景3"];
+    UIImage *headerImage = [UIImage imageNamed:@"app_feature_0"];
     
     self.herderImageView = [[UIImageView alloc] initWithImage:headerImage];
     self.herderImageView.bounds = CGRectMake(0, 0, 0, 250.0f);
+    
+    self.IndexTableView.delegate = self;
+    
+    self.IndexTableView.dataSource = self;
     self.IndexTableView.tableHeaderView = _herderImageView;
     
     
@@ -70,7 +74,9 @@
 
 }
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.IndexTableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 #pragma mark - Table view data source
 
@@ -88,15 +94,16 @@
     
     if (indexPath.row == 0) {
         BDBMessageTableViewCell *cell = [BDBMessageTableViewCell cell];
-        cell.userInteractionEnabled = NO;
+//        cell.userInteractionEnabled = NO;
         return cell;
 
     }else if (indexPath.row == 1) {
         BDBParameterTableViewCell *cell = [BDBParameterTableViewCell cell];
-        cell.userInteractionEnabled = NO;
-//        [cell.hideAndShowButton addTarget:self action:@selector(hideAndShow) forControlEvents:UIControlEventTouchUpInside];
+        [cell.hideAndShowButton addTarget:self action:@selector(hideAndShow) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }else if (indexPath.row == 2) {
+        
+        
         BDBSortTableViewCell *cell = [BDBSortTableViewCell cell];
         NSMutableAttributedString *firstString = [[NSMutableAttributedString alloc] initWithString:@">15%"];
         [firstString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:7.0f] range:NSMakeRange(3, 1)];
@@ -137,15 +144,15 @@
     }
 }
 
-//- (void)hideAndShow {
-//    CGRect imageViewBounds = self.herderImageView.bounds;
-//    
-//    if (imageViewBounds.size.height == 250.0f) {
-//        imageViewBounds.size.height = 0;
-//    }else if (imageViewBounds.size.height == 0) {
-//        imageViewBounds.size.height = 250;
-//    }
-//}
+- (void)hideAndShow {
+    CGRect imageViewBounds = self.herderImageView.bounds;
+    NSLog(@"button被点击了...");
+    if (imageViewBounds.size.height == 250.0f) {
+        imageViewBounds.size.height = 0;
+    }else if (imageViewBounds.size.height == 0) {
+        imageViewBounds.size.height = 250;
+    }
+}
 
 
 

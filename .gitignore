@@ -24,3 +24,5 @@ DerivedData
 # http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
 #
 #Pods/
+#忽略提交项目描述文件
+./BiDaiBao(比贷宝)/BiDaiBao(比贷宝).xcodeproj

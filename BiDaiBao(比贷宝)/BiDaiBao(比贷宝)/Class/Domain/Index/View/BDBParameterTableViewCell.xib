@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
@@ -159,12 +160,12 @@
                         </constraints>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXu-gs-nmK">
-                        <rect key="frame" x="182" y="0.0" width="16" height="35"/>
+                        <rect key="frame" x="140" y="-10" width="100" height="100"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="35" id="f6S-z6-afU"/>
-                            <constraint firstAttribute="width" constant="16" id="xdN-t0-quc"/>
+                            <constraint firstAttribute="height" constant="100" id="f6S-z6-afU"/>
+                            <constraint firstAttribute="width" constant="100" id="xdN-t0-quc"/>
                         </constraints>
-                        <state key="normal" title="Button" image="icon_11_01_03">
+                        <state key="normal" image="icon_11_01_03">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
@@ -175,7 +176,7 @@
                     <constraint firstItem="0Zs-Wb-cfd" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" id="2Sr-eF-CP0"/>
                     <constraint firstItem="0Zs-Wb-cfd" firstAttribute="centerY" secondItem="51W-PP-J5Y" secondAttribute="centerY" id="3c9-pb-yTl"/>
                     <constraint firstItem="EwJ-bR-qAZ" firstAttribute="leading" secondItem="51W-PP-J5Y" secondAttribute="trailing" id="53k-ma-zwN"/>
-                    <constraint firstItem="SXu-gs-nmK" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-15" id="5Ec-pB-qEt"/>
+                    <constraint firstItem="SXu-gs-nmK" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="40" id="5Ec-pB-qEt"/>
                     <constraint firstItem="hmo-Hz-OYm" firstAttribute="leading" secondItem="EwJ-bR-qAZ" secondAttribute="trailing" id="9zI-1I-eUj"/>
                     <constraint firstItem="0Zs-Wb-cfd" firstAttribute="centerY" secondItem="hmo-Hz-OYm" secondAttribute="centerY" id="EHK-YT-47a"/>
                     <constraint firstAttribute="bottom" secondItem="51W-PP-J5Y" secondAttribute="bottom" id="Jns-pk-0Ge"/>
