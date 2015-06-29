@@ -567,11 +567,21 @@ typedef enum {
     }
     else{
         
+        NSArray *array = _sievingButtonArray[indexPath.row];
+        
+        NSLog(@"%li",indexPath.section);
+        
+        NSInteger buttonsCounts = array.count;
+        
+        
         if(indexPath.section == 0){
             
             if(_showMoreButton.isShowMores){
                 
-                heightForRow = 180.0f;
+                if(buttonsCounts % 4 == 0){
+                
+                    heightForRow = buttonsCounts / 4 * 30 + 50.0f;
+                }
             }
             else{
                 
