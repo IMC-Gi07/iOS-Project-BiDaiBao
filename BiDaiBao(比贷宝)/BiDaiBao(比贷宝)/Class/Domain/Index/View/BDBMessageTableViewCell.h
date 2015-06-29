@@ -1,5 +1,5 @@
 //
-//  BDBMainTableViewController.h
+//  BDBMessageTableViewCell.h
 //  BDBMessagePercent
 //
 //  Created by Jamy on 15/6/17.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BDBIndexViewController : UIViewController
+@interface BDBMessageTableViewCell : UITableViewCell
+
++ (BDBMessageTableViewCell *)cell;
 
 @end

@@ -1,141 +1,205 @@
 //
-//  BDBIndexViewController.m
-//  BiDaiBao(比贷宝)
+//  BDBMainTableViewController.m
+//  BDBMessagePercent
 //
-//  Created by zhang xianglu on 15/6/7.
-//  Copyright (c) 2015年 zhang xianglu. All rights reserved.
+//  Created by Jamy on 15/6/17.
+//  Copyright (c) 2015年 Jamy. All rights reserved.
 //
 
 #import "BDBIndexViewController.h"
-#import "BDBIndexTableViewHeader.h"
+#import "BDBMessageTableViewCell.h"
+#import "BDBSortTableViewCell.h"
+#import "BDBDetailedMessageTableViewCell.h"
+#import "BDBParameterTableViewCell.h"
+#import "MJRefresh.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "GlobalConfigurations.h"
+#import "BDBIndexResponseModel.h"
+
+
 
 @interface BDBIndexViewController ()
 
-/**
- *  首页，表视图
- */
-@property (weak, nonatomic) IBOutlet UITableView *indexTableView;
+@property(nonatomic,strong) BDBIndexResponseModel *indexModel;
 
-/**
- *	表格头部视图
- */
-@property(nonatomic,weak) BDBIndexTableViewHeader *indexTableViewHeader;
+@property(nonatomic,strong) UIImageView *herderImageView;
 
-/**
- *  导航右按钮点击处理器
- *
- *  @param buttonItem 右部按钮
- */
-- (void)rightBarButtonClickedAction:(UIBarButtonItem *)buttonItem;
+@property (weak, nonatomic) IBOutlet UITableView *IndexTableView;
 
-
-
-/**
- *	初始化表格视图
- */
-- (void)initIndexTableView;
 
 @end
 
 @implementation BDBIndexViewController
 
-#pragma mark - LifeCycle Methods
-- (instancetype)initWithCoder:(NSCoder *)coder{
-	self = [super initWithCoder:coder];
-	if (self) {
-		self.title = @"比贷宝";
-	}
-	return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIImage *headerImage = [UIImage imageNamed:@"风景3"];
+    
+    self.herderImageView = [[UIImageView alloc] initWithImage:headerImage];
+    self.herderImageView.bounds = CGRectMake(0, 0, 0, 250.0f);
+    self.IndexTableView.tableHeaderView = _herderImageView;
+    
+    
+    __weak typeof (self) thisInstance = self;
+    self.IndexTableView.header = [BDBTableViewRefreshHeader headerWithRefreshingBlock:^{
+        [thisInstance.IndexTableView.header endRefreshing];
+    }];
+    
+    self.IndexTableView.footer = [BDBTableViewRefreshFooter footerWithRefreshingBlock:^{
+        [thisInstance.IndexTableView.footer endRefreshing];
+    }];
+    //创建一个请求对象
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    //调用请求对象的解析器
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    //主机地址
+    NSString *url = [BDBGlobal_HostAddress stringByAppendingPathComponent:@"GetRealTimeStatistics"];
+    
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    
+    dict[@"PlatFormID"] = @"-1";
+    
+    [manager POST:url parameters:dict success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+        BDBIndexResponseModel *indexResponseModel = [BDBIndexResponseModel objectWithKeyValues:responseObject];
+        self.indexModel = indexResponseModel;
+//        NSLog(@"%@",self.indexModel.AmountRemain);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
 
-	UIImage *rightBarButtonImage = [UIImageWithName(@"index_nav_right") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:rightBarButtonImage style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonClickedAction:)];
-	
-	[self initIndexTableView];
 }
 
 
-#pragma mark - Private Methods
-- (void)rightBarButtonClickedAction:(UIBarButtonItem *)buttonItem {
-	[self performSegueWithIdentifier:@"ToNoticeViewControllerSegue" sender:self];
-}
-
-- (void)initIndexTableView {
-	//indexTableView tableViewHeader
-	BDBIndexTableViewHeader *indexTableViewHeader = [[BDBIndexTableViewHeader alloc] init];
-	
-	self.indexTableViewHeader = indexTableViewHeader; 
-
-	//根据约束，实际计算Frame(适用于只能设定frame的地方)
-	CGSize indexTableViewHeaderFitSize = [_indexTableViewHeader systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-
-	//tableViewHead的高度设定，只能用Frame方式
-	_indexTableViewHeader.height = indexTableViewHeaderFitSize.height;
-
-	_indexTableView.tableHeaderView = _indexTableViewHeader;
-}
 
 #pragma mark - Table view data source
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    return 0;
+    return 15;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
     
-    return cell;
+    if (indexPath.row == 0) {
+        BDBMessageTableViewCell *cell = [BDBMessageTableViewCell cell];
+        cell.userInteractionEnabled = NO;
+        return cell;
+
+    }else if (indexPath.row == 1) {
+        BDBParameterTableViewCell *cell = [BDBParameterTableViewCell cell];
+        cell.userInteractionEnabled = NO;
+//        [cell.hideAndShowButton addTarget:self action:@selector(hideAndShow) forControlEvents:UIControlEventTouchUpInside];
+        return cell;
+    }else if (indexPath.row == 2) {
+        BDBSortTableViewCell *cell = [BDBSortTableViewCell cell];
+        NSMutableAttributedString *firstString = [[NSMutableAttributedString alloc] initWithString:@">15%"];
+        [firstString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:7.0f] range:NSMakeRange(3, 1)];
+        [firstString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:12.0f] range:NSMakeRange(0, 3)];
+        cell.moreThanFifteenPercentLabel.attributedText = firstString;
+        NSMutableAttributedString *secondString = [[NSMutableAttributedString alloc] initWithString:@"12%-15%"];
+        [secondString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:12.0f] range:NSMakeRange(0, 2)];
+        [secondString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:12.0f] range:NSMakeRange(4, 2)];
+        [secondString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:7.0f] range:NSMakeRange(2, 2)];
+        [secondString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:7.0f] range:NSMakeRange(6, 1)];
+        cell.moreThanTwelvePercentLessThanFifteenPercentLabel.attributedText = secondString;
+        NSMutableAttributedString *thirdString = [[NSMutableAttributedString alloc] initWithString:@"<12%"];
+        [thirdString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:12.0f] range:NSMakeRange(0, 3)];
+        [thirdString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:7.0f] range:NSMakeRange(3, 1)];
+        cell.lessThanTwelvePercentLabel.attributedText = thirdString;
+        
+        UITapGestureRecognizer *redViewTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(changeRedMessage:)];
+        [cell.redView addGestureRecognizer:redViewTapGestureRecognizer];
+        
+        UITapGestureRecognizer *greenViewTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(changeGreenMessage:)];
+        [cell.greenView addGestureRecognizer:greenViewTapGestureRecognizer];
+        
+        UITapGestureRecognizer *blueViewTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(changeBlueMessage:)];
+        [cell.blueView addGestureRecognizer:blueViewTapGestureRecognizer];
+        
+        return cell;
+    }else {
+        BDBDetailedMessageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+        if (cell == nil) {
+            cell = [BDBDetailedMessageTableViewCell cell];
+            cell.numberLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row - 2];
+            NSMutableAttributedString *percentNumber = [[NSMutableAttributedString alloc] initWithString:@"25%"];
+            [percentNumber addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:14.0f] range:NSMakeRange(2, 1)];
+            cell.messageLabel.attributedText = percentNumber;
+        }
+        return cell;
+
+    }
 }
-*/
 
-#pragma mark - UITableView Delegate Methods
+//- (void)hideAndShow {
+//    CGRect imageViewBounds = self.herderImageView.bounds;
+//    
+//    if (imageViewBounds.size.height == 250.0f) {
+//        imageViewBounds.size.height = 0;
+//    }else if (imageViewBounds.size.height == 0) {
+//        imageViewBounds.size.height = 250;
+//    }
+//}
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+
+#pragma mark - GestureRecognizer
+- (void)changeRedMessage: (UIGestureRecognizer *)gesture {
+    
+    BDBSortTableViewCell *cell = (BDBSortTableViewCell *)gesture.view.superview.superview;
+    
+    //NSLog(@"%@",gesture.view.superview.superview);
+    
+    cell.redView.backgroundColor = [UIColor redColor];
+    
+    
+    cell.blueView.backgroundColor = [UIColor colorWithRed:64/255.0f green:132/255.0f blue:249/255.0f alpha:1];
+    
+    
+    cell.greenView.backgroundColor = [UIColor colorWithRed:87/255.0f green:206/255.0f blue:82/255.0f alpha:1];
+
+    
+    
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (void)changeGreenMessage: (UIGestureRecognizer *)gesture {
+    BDBSortTableViewCell *cell = (BDBSortTableViewCell *)gesture.view.superview.superview;
+    cell.greenView.backgroundColor = [UIColor greenColor];
+    
+    cell.blueView.backgroundColor = [UIColor colorWithRed:64/255.0f green:132/255.0f blue:249/255.0f alpha:1];
+    
+    cell.redView.backgroundColor = [UIColor colorWithRed:224/255.0f green:62/255.0f blue:74/255.0f alpha:1];
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+- (void)changeBlueMessage: (UIGestureRecognizer *)gesture {
+    BDBSortTableViewCell *cell = (BDBSortTableViewCell *)gesture.view.superview.superview;
+    cell.blueView.backgroundColor = [UIColor blueColor];
+    
+    cell.redView.backgroundColor = [UIColor colorWithRed:224/255.0f green:62/255.0f blue:74/255.0f alpha:1];
+    
+        cell.greenView.backgroundColor = [UIColor colorWithRed:87/255.0f green:206/255.0f blue:82/255.0f alpha:1];
+    
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+//行高
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat hight = 0;
+    if (indexPath.row == 0) {
+        hight = 44;
+    }else if (indexPath.row == 1) {
+        hight = 100;
+    }else if (indexPath.row == 2) {
+        hight = 66;
+    }else {
+        hight = 44;
+    }
+    return hight;
 }
-*/
-
-
 
 @end
