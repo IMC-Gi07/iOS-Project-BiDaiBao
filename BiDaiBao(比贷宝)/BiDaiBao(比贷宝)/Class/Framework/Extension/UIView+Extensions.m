@@ -88,4 +88,31 @@
 	self.frame = frame;
 }
 
+/**
+ *  centerX
+ */
+- (CGFloat)centerX {
+	return self.center.x;
+}
+
+- (void)setCenterX:(CGFloat)centerX {
+	CGPoint centerPoint = self.center;
+	centerPoint.x = centerX;
+	self.center = centerPoint;
+}
+
+/**
+ *  centerY
+ */
+- (CGFloat)centerY {
+	return self.center.y;
+}
+
+- (void)setCenterY:(CGFloat)centerY {
+	CGPoint centerPoint = self.center;
+	centerPoint.y = centerY;
+	self.center = centerPoint;
+}
+
+
 @end
