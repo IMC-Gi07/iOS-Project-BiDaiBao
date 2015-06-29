@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		A9BB719D1B4132BE004F17A9 /* BDBWarningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BB71961B4132BE004F17A9 /* BDBWarningViewController.m */; };
 		A9BB719E1B4132BE004F17A9 /* BDBWarningTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BB719A1B4132BE004F17A9 /* BDBWarningTableViewCell.m */; };
 		A9BB719F1B4132BE004F17A9 /* BDBWarningTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9BB719B1B4132BE004F17A9 /* BDBWarningTableViewCell.xib */; };
@@ -41,6 +42,21 @@
 		A9BB72401B4142F2004F17A9 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BB722D1B4142F2004F17A9 /* UIView+MJExtension.m */; };
 		A9BB72451B414348004F17A9 /* MJDIYAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BB72421B414348004F17A9 /* MJDIYAutoFooter.m */; };
 		A9BB72461B414348004F17A9 /* MJDIYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BB72441B414348004F17A9 /* MJDIYHeader.m */; };
+=======
+		18446C191B413BB90040AF01 /* Subject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18446C181B413BB90040AF01 /* Subject.storyboard */; };
+		18446C1C1B413C2E0040AF01 /* BDBSubjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18446C1B1B413C2E0040AF01 /* BDBSubjectViewController.m */; };
+		18446C291B413C6D0040AF01 /* BDBButtonForSift.m in Sources */ = {isa = PBXBuildFile; fileRef = 18446C1E1B413C6D0040AF01 /* BDBButtonForSift.m */; };
+		18446C2A1B413C6D0040AF01 /* BDBTableViewCell_Sift.m in Sources */ = {isa = PBXBuildFile; fileRef = 18446C201B413C6D0040AF01 /* BDBTableViewCell_Sift.m */; };
+		18446C2B1B413C6D0040AF01 /* BDBTableViewCell_Sift.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18446C211B413C6D0040AF01 /* BDBTableViewCell_Sift.xib */; };
+		18446C2C1B413C6D0040AF01 /* BDBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18446C231B413C6D0040AF01 /* BDBTableViewCell.m */; };
+		18446C2D1B413C6D0040AF01 /* BDBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18446C241B413C6D0040AF01 /* BDBTableViewCell.xib */; };
+		18446C2E1B413C6D0040AF01 /* MOProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18446C261B413C6D0040AF01 /* MOProgressView.m */; };
+		18446C2F1B413C6D0040AF01 /* BDBButtonForTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18446C281B413C6D0040AF01 /* BDBButtonForTopView.m */; };
+		18446C361B413C860040AF01 /* BDBSiftButtonInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18446C311B413C860040AF01 /* BDBSiftButtonInfoModel.m */; };
+		18446C371B413C860040AF01 /* BDBSujectRespondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18446C331B413C860040AF01 /* BDBSujectRespondModel.m */; };
+		18446C381B413C860040AF01 /* BDBSujectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18446C341B413C860040AF01 /* BDBSujectModel.m */; };
+		18446C3A1B413D0F0040AF01 /* siftButtons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18446C391B413D0F0040AF01 /* siftButtons.plist */; };
+>>>>>>> origin/Zengdl
 		D80895B01B25C2E500A7B1A4 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D80895AD1B25C2E500A7B1A4 /* FLAnimatedImage.m */; };
 		D80895B11B25C2E500A7B1A4 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D80895AF1B25C2E500A7B1A4 /* FLAnimatedImageView.m */; };
 		D813EDE31B2FC3E400606D60 /* BDBFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D813EDE21B2FC3E400606D60 /* BDBFeatureViewController.m */; };
@@ -108,7 +124,6 @@
 		D874CCF91B2EC50700CFCE57 /* BDBNoticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D874CCF71B2EC50700CFCE57 /* BDBNoticeTableViewCell.xib */; };
 		D874CCFB1B2EC5A400CFCE57 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D874CCFA1B2EC5A400CFCE57 /* Discovery.storyboard */; };
 		D874CD011B2EC68C00CFCE57 /* BDBDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D874CD001B2EC68C00CFCE57 /* BDBDiscoveryViewController.m */; };
-		D874CD031B2EC78200CFCE57 /* Subject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D874CD021B2EC78200CFCE57 /* Subject.storyboard */; };
 		D874CD051B2EC79C00CFCE57 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D874CD041B2EC79C00CFCE57 /* User.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +138,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		A9BB71951B4132BE004F17A9 /* BDBWarningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBWarningViewController.h; sourceTree = "<group>"; };
 		A9BB71961B4132BE004F17A9 /* BDBWarningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBWarningViewController.m; sourceTree = "<group>"; };
 		A9BB71991B4132BE004F17A9 /* BDBWarningTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBWarningTableViewCell.h; sourceTree = "<group>"; };
@@ -187,6 +203,30 @@
 		A9BB72421B414348004F17A9 /* MJDIYAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDIYAutoFooter.m; sourceTree = "<group>"; };
 		A9BB72431B414348004F17A9 /* MJDIYHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDIYHeader.h; sourceTree = "<group>"; };
 		A9BB72441B414348004F17A9 /* MJDIYHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDIYHeader.m; sourceTree = "<group>"; };
+=======
+		18446C181B413BB90040AF01 /* Subject.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Subject.storyboard; sourceTree = "<group>"; };
+		18446C1A1B413C2E0040AF01 /* BDBSubjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBSubjectViewController.h; sourceTree = "<group>"; };
+		18446C1B1B413C2E0040AF01 /* BDBSubjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBSubjectViewController.m; sourceTree = "<group>"; };
+		18446C1D1B413C6D0040AF01 /* BDBButtonForSift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBButtonForSift.h; sourceTree = "<group>"; };
+		18446C1E1B413C6D0040AF01 /* BDBButtonForSift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBButtonForSift.m; sourceTree = "<group>"; };
+		18446C1F1B413C6D0040AF01 /* BDBTableViewCell_Sift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBTableViewCell_Sift.h; sourceTree = "<group>"; };
+		18446C201B413C6D0040AF01 /* BDBTableViewCell_Sift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBTableViewCell_Sift.m; sourceTree = "<group>"; };
+		18446C211B413C6D0040AF01 /* BDBTableViewCell_Sift.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDBTableViewCell_Sift.xib; sourceTree = "<group>"; };
+		18446C221B413C6D0040AF01 /* BDBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBTableViewCell.h; sourceTree = "<group>"; };
+		18446C231B413C6D0040AF01 /* BDBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBTableViewCell.m; sourceTree = "<group>"; };
+		18446C241B413C6D0040AF01 /* BDBTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDBTableViewCell.xib; sourceTree = "<group>"; };
+		18446C251B413C6D0040AF01 /* MOProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOProgressView.h; sourceTree = "<group>"; };
+		18446C261B413C6D0040AF01 /* MOProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOProgressView.m; sourceTree = "<group>"; };
+		18446C271B413C6D0040AF01 /* BDBButtonForTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBButtonForTopView.h; sourceTree = "<group>"; };
+		18446C281B413C6D0040AF01 /* BDBButtonForTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBButtonForTopView.m; sourceTree = "<group>"; };
+		18446C301B413C860040AF01 /* BDBSiftButtonInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBSiftButtonInfoModel.h; sourceTree = "<group>"; };
+		18446C311B413C860040AF01 /* BDBSiftButtonInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBSiftButtonInfoModel.m; sourceTree = "<group>"; };
+		18446C321B413C860040AF01 /* BDBSujectRespondModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBSujectRespondModel.h; sourceTree = "<group>"; };
+		18446C331B413C860040AF01 /* BDBSujectRespondModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBSujectRespondModel.m; sourceTree = "<group>"; };
+		18446C341B413C860040AF01 /* BDBSujectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBSujectModel.m; sourceTree = "<group>"; };
+		18446C351B413C860040AF01 /* BDBSujectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBSujectModel.h; sourceTree = "<group>"; };
+		18446C391B413D0F0040AF01 /* siftButtons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = siftButtons.plist; sourceTree = "<group>"; };
+>>>>>>> origin/Zengdl
 		D80895AC1B25C2E500A7B1A4 /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
 		D80895AD1B25C2E500A7B1A4 /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
 		D80895AE1B25C2E500A7B1A4 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
@@ -318,7 +358,6 @@
 		D874CCFA1B2EC5A400CFCE57 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
 		D874CCFF1B2EC68C00CFCE57 /* BDBDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBDiscoveryViewController.h; sourceTree = "<group>"; };
 		D874CD001B2EC68C00CFCE57 /* BDBDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBDiscoveryViewController.m; sourceTree = "<group>"; };
-		D874CD021B2EC78200CFCE57 /* Subject.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Subject.storyboard; sourceTree = "<group>"; };
 		D874CD041B2EC79C00CFCE57 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -602,6 +641,7 @@
 				D8225DEB1B216CE900102B9A /* AppDelegate.h */,
 				D8225DEC1B216CE900102B9A /* AppDelegate.m */,
 				D8225DD21B21524900102B9A /* Images.xcassets */,
+				18446C391B413D0F0040AF01 /* siftButtons.plist */,
 				D8225DC61B21524900102B9A /* Info.plist */,
 				D8225DC71B21524900102B9A /* main.m */,
 				D8225DEE1B216D5900102B9A /* BiDaiBao-Prefix.pch */,
@@ -894,7 +934,7 @@
 		D874CCD81B2EC37700CFCE57 /* Subject */ = {
 			isa = PBXGroup;
 			children = (
-				D874CD021B2EC78200CFCE57 /* Subject.storyboard */,
+				18446C181B413BB90040AF01 /* Subject.storyboard */,
 				D874CCD91B2EC37700CFCE57 /* Controller */,
 				D874CCDC1B2EC37700CFCE57 /* Model */,
 				D874CCDD1B2EC37700CFCE57 /* View */,
@@ -905,6 +945,8 @@
 		D874CCD91B2EC37700CFCE57 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18446C1A1B413C2E0040AF01 /* BDBSubjectViewController.h */,
+				18446C1B1B413C2E0040AF01 /* BDBSubjectViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -912,6 +954,12 @@
 		D874CCDC1B2EC37700CFCE57 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18446C301B413C860040AF01 /* BDBSiftButtonInfoModel.h */,
+				18446C311B413C860040AF01 /* BDBSiftButtonInfoModel.m */,
+				18446C321B413C860040AF01 /* BDBSujectRespondModel.h */,
+				18446C331B413C860040AF01 /* BDBSujectRespondModel.m */,
+				18446C341B413C860040AF01 /* BDBSujectModel.m */,
+				18446C351B413C860040AF01 /* BDBSujectModel.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -919,6 +967,18 @@
 		D874CCDD1B2EC37700CFCE57 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18446C1D1B413C6D0040AF01 /* BDBButtonForSift.h */,
+				18446C1E1B413C6D0040AF01 /* BDBButtonForSift.m */,
+				18446C1F1B413C6D0040AF01 /* BDBTableViewCell_Sift.h */,
+				18446C201B413C6D0040AF01 /* BDBTableViewCell_Sift.m */,
+				18446C211B413C6D0040AF01 /* BDBTableViewCell_Sift.xib */,
+				18446C221B413C6D0040AF01 /* BDBTableViewCell.h */,
+				18446C231B413C6D0040AF01 /* BDBTableViewCell.m */,
+				18446C241B413C6D0040AF01 /* BDBTableViewCell.xib */,
+				18446C251B413C6D0040AF01 /* MOProgressView.h */,
+				18446C261B413C6D0040AF01 /* MOProgressView.m */,
+				18446C271B413C6D0040AF01 /* BDBButtonForTopView.h */,
+				18446C281B413C6D0040AF01 /* BDBButtonForTopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1047,9 +1107,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18446C3A1B413D0F0040AF01 /* siftButtons.plist in Resources */,
 				D859C4771B33C4BC009EFDE0 /* global_loaddata_icon.gif in Resources */,
+				18446C2D1B413C6D0040AF01 /* BDBTableViewCell.xib in Resources */,
 				D874CCFB1B2EC5A400CFCE57 /* Discovery.storyboard in Resources */,
+<<<<<<< HEAD
 				D874CD031B2EC78200CFCE57 /* Subject.storyboard in Resources */,
+=======
+				D81FB3521B3CF5CA0063AFC6 /* MJRefresh.bundle in Resources */,
+				D874CD071B2EC7AE00CFCE57 /* Warning.storyboard in Resources */,
+				18446C2B1B413C6D0040AF01 /* BDBTableViewCell_Sift.xib in Resources */,
+>>>>>>> origin/Zengdl
 				D8745BCA1B22DA1B0099D4EA /* Modules.plist in Resources */,
 				A9BB71A01B4132BE004F17A9 /* Warning.storyboard in Resources */,
 				D81FB3161B3CF3200063AFC6 /* global_refreshdata_icon.gif in Resources */,
@@ -1061,7 +1129,11 @@
 				D874CCF91B2EC50700CFCE57 /* BDBNoticeTableViewCell.xib in Resources */,
 				A9BB71AD1B413DCE004F17A9 /* BDB_TableViewCell_Two.xib in Resources */,
 				D813EDE71B2FF49E00606D60 /* Feature.storyboard in Resources */,
+<<<<<<< HEAD
 				A9BB723C1B4142F2004F17A9 /* MJRefresh.bundle in Resources */,
+=======
+				18446C191B413BB90040AF01 /* Subject.storyboard in Resources */,
+>>>>>>> origin/Zengdl
 				D874CD051B2EC79C00CFCE57 /* User.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1098,6 +1170,11 @@
 				A9BB723F1B4142F2004F17A9 /* UIScrollView+MJRefresh.m in Sources */,
 				D8745BB21B22D1360099D4EA /* NSData+ImageContentType.m in Sources */,
 				D874CD011B2EC68C00CFCE57 /* BDBDiscoveryViewController.m in Sources */,
+<<<<<<< HEAD
+=======
+				D81FB3461B3CF5CA0063AFC6 /* MJRefreshComponent.m in Sources */,
+				18446C291B413C6D0040AF01 /* BDBButtonForSift.m in Sources */,
+>>>>>>> origin/Zengdl
 				D8745B861B22D12C0099D4EA /* AFHTTPRequestOperation.m in Sources */,
 				A9BB71BA1B413FAF004F17A9 /* ASValueTrackingSlider.m in Sources */,
 				D8745C801B2434C30099D4EA /* UIButton+Extensions.m in Sources */,
@@ -1107,6 +1184,7 @@
 				D8745BBA1B22D1360099D4EA /* UIButton+WebCache.m in Sources */,
 				A9BB72371B4142F2004F17A9 /* MJRefreshBackNormalFooter.m in Sources */,
 				D8745BB71B22D1360099D4EA /* SDWebImageDownloaderOperation.m in Sources */,
+				18446C2F1B413C6D0040AF01 /* BDBButtonForTopView.m in Sources */,
 				D8745BCD1B22DD710099D4EA /* BDBBaseViewController.m in Sources */,
 				D8745BB11B22D1360099D4EA /* MKAnnotationView+WebCache.m in Sources */,
 				D81FB3701B3CF6320063AFC6 /* NSString+MJExtension.m in Sources */,
@@ -1114,7 +1192,11 @@
 				A9BB72401B4142F2004F17A9 /* UIView+MJExtension.m in Sources */,
 				D8745BB41B22D1360099D4EA /* SDWebImageCompat.m in Sources */,
 				D8745B8D1B22D12C0099D4EA /* AFURLResponseSerialization.m in Sources */,
+<<<<<<< HEAD
 				A9BB72361B4142F2004F17A9 /* MJRefreshBackGifFooter.m in Sources */,
+=======
+				18446C361B413C860040AF01 /* BDBSiftButtonInfoModel.m in Sources */,
+>>>>>>> origin/Zengdl
 				D8745BBC1B22D1360099D4EA /* UIImage+MultiFormat.m in Sources */,
 				A9BB71A71B413D90004F17A9 /* BDB_TableViewCell_One.m in Sources */,
 				A9BB71B31B413EC8004F17A9 /* BDB_Cell_Button.m in Sources */,
@@ -1123,6 +1205,11 @@
 				A9BB72341B4142F2004F17A9 /* MJRefreshAutoNormalFooter.m in Sources */,
 				D81FB37A1B3CF96C0063AFC6 /* BDBNoticeModel.m in Sources */,
 				D8225DED1B216CE900102B9A /* AppDelegate.m in Sources */,
+<<<<<<< HEAD
+=======
+				18446C371B413C860040AF01 /* BDBSujectRespondModel.m in Sources */,
+				D81FB34D1B3CF5CA0063AFC6 /* MJRefreshBackNormalFooter.m in Sources */,
+>>>>>>> origin/Zengdl
 				D8745BC01B22D1360099D4EA /* UIView+WebCacheOperation.m in Sources */,
 				A9BB72321B4142F2004F17A9 /* MJRefreshHeader.m in Sources */,
 				D8745B881B22D12C0099D4EA /* AFHTTPSessionManager.m in Sources */,
@@ -1133,6 +1220,7 @@
 				D8745BB61B22D1360099D4EA /* SDWebImageDownloader.m in Sources */,
 				D8745BBE1B22D1360099D4EA /* UIImageView+HighlightedWebCache.m in Sources */,
 				D80895B11B25C2E500A7B1A4 /* FLAnimatedImageView.m in Sources */,
+				18446C2E1B413C6D0040AF01 /* MOProgressView.m in Sources */,
 				D874CCEA1B2EC37700CFCE57 /* BDBNoticeViewController.m in Sources */,
 				D81FB36B1B3CF6320063AFC6 /* MJProperty.m in Sources */,
 				D8745BB51B22D1360099D4EA /* SDWebImageDecoder.m in Sources */,
@@ -1142,7 +1230,12 @@
 				D874CCF81B2EC50700CFCE57 /* BDBNoticeTableViewCell.m in Sources */,
 				D8745C871B244BD90099D4EA /* ZXLNavigationBar.m in Sources */,
 				D81FB3801B3D36470063AFC6 /* BDBTableViewRefreshFooter.m in Sources */,
+<<<<<<< HEAD
 				A9BB72461B414348004F17A9 /* MJDIYHeader.m in Sources */,
+=======
+				18446C2A1B413C6D0040AF01 /* BDBTableViewCell_Sift.m in Sources */,
+				D81FB3531B3CF5CA0063AFC6 /* MJRefreshConst.m in Sources */,
+>>>>>>> origin/Zengdl
 				D81FB36C1B3CF6320063AFC6 /* MJType.m in Sources */,
 				D8745BBD1B22D1360099D4EA /* UIImage+WebP.m in Sources */,
 				D874CCE91B2EC37700CFCE57 /* BDBIndexViewController.m in Sources */,
@@ -1157,11 +1250,22 @@
 				D80895B01B25C2E500A7B1A4 /* FLAnimatedImage.m in Sources */,
 				A9BB71A31B413D2E004F17A9 /* BDBWarningAddViewController.m in Sources */,
 				D81FB37D1B3D2E590063AFC6 /* BDBTableViewRefreshHeader.m in Sources */,
+<<<<<<< HEAD
 				A9BB719E1B4132BE004F17A9 /* BDBWarningTableViewCell.m in Sources */,
 				A9BB722E1B4142F2004F17A9 /* MJRefreshAutoFooter.m in Sources */,
 				A9BB72451B414348004F17A9 /* MJDIYAutoFooter.m in Sources */,
 				D8533E681B3E8AE30086EFEA /* BDBIndexTableViewHeader.m in Sources */,
 				D859C47B1B33CBF1009EFDE0 /* ZXLLoadDataIndicatePage.m in Sources */,
+=======
+				18446C381B413C860040AF01 /* BDBSujectModel.m in Sources */,
+				D81FB34A1B3CF5CA0063AFC6 /* MJRefreshAutoNormalFooter.m in Sources */,
+				D8533E681B3E8AE30086EFEA /* BDBIndexTableViewHeader.m in Sources */,
+				D859C47B1B33CBF1009EFDE0 /* ZXLLoadDataIndicatePage.m in Sources */,
+				18446C2C1B413C6D0040AF01 /* BDBTableViewCell.m in Sources */,
+				18446C1C1B413C2E0040AF01 /* BDBSubjectViewController.m in Sources */,
+				D81FB3481B3CF5CA0063AFC6 /* MJRefreshHeader.m in Sources */,
+				D81FB3511B3CF5CA0063AFC6 /* MJRefreshStateHeader.m in Sources */,
+>>>>>>> origin/Zengdl
 				D8745C7D1B242F9F0099D4EA /* UIBarButtonItem+Extensions.m in Sources */,
 				D874CC941B2EA8F100CFCE57 /* GlobalConfigurations.m in Sources */,
 				D8745BB31B22D1360099D4EA /* SDImageCache.m in Sources */,
