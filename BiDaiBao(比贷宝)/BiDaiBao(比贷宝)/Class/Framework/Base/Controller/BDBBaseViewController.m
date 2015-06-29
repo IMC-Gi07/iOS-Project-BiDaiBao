@@ -19,15 +19,23 @@
 
 @implementation BDBBaseViewController
 
++ (void)initialize {
+	
+}
+
+/*
 - (instancetype)initWithCoder:(NSCoder *)coder{
 	if (self = [super initWithCoder:coder]) {
 		self.modules = [NSArray arrayWithContentsOfFile:FilePathInBundleWithNameAndType(@"Modules", @"plist")];
 	}
 	return self;
 }
+*/
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	
+	self.modules = [NSArray arrayWithContentsOfFile:FilePathInBundleWithNameAndType(@"Modules", @"plist")];
 
 	NSMutableArray *moduleViewControllers = [NSMutableArray arrayWithCapacity:_modules.count];
 	
@@ -49,9 +57,5 @@
 	
 	self.viewControllers = moduleViewControllers;
 }
-
-
-
-
 
 @end

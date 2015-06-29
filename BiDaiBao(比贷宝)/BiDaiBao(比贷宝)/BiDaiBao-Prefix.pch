@@ -22,6 +22,16 @@
 	*/
 	#import "AFNetworking.h"
 	#import "AFHTTPRequestOperation.h"
+	#import "MJExtension.h"
+	#import "MJRefresh.h"
+	#import "FLAnimatedImage.h"
+	#import "UITableView+FDTemplateLayoutCell.h"
+	
+	/**
+	 *  自定义
+	 */
+	#import "BDBTableViewRefreshHeader.h"
+	#import "BDBTableViewRefreshFooter.h"
 	
 	/**
 	 *  类别
@@ -30,6 +40,10 @@
 	#import "UIBarButtonItem+Extensions.h"
 	#import "UIButton+Extensions.h"
 	
+	/**
+	 *  全局配置文件
+	 */
+	#import "GlobalConfigurations.h"
 	
 #endif
 
@@ -85,6 +99,7 @@
  */
 #define IPHONE_DEVICE (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPad)
 #define IPAD_DEVICE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IPHONE_DEVICE_UUID ([UIDevice currentDevice].identifierForVendor.UUIDString)
  
 /**
  *  获取系统版本
