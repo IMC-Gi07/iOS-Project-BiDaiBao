@@ -15,8 +15,6 @@
 + (UIBarButtonItem *)itemWithImage:(UIImage *)image highlightedImage:(UIImage *)highlightedImage clickedHandler:(HandleBlock)clickedHandleBlock {
 	//自定义返回按钮
 	UIButton *barButton = [UIButton buttonWithType:UIButtonTypeCustom];
-	barButton.size = CGSizeMake(30, 30);
-	//barButton.backgroundColor = [UIColor redColor];
 	
 	//设置图片
 	[barButton setImage:image forState:UIControlStateNormal];

@@ -31,7 +31,7 @@ static CGFloat const kSpaceToCoverStatusBars = 20.0f;
 	//颜色
 	titleTextAttributes[NSForegroundColorAttributeName] = UIColorWithName(white);
 	//字体
-	titleTextAttributes[NSFontAttributeName] = UIFontWithSize(18.0f);
+	titleTextAttributes[NSFontAttributeName] = UIFontWithSize(13.0f);
 	
 	[navigationBar setTitleTextAttributes:titleTextAttributes];
 }
@@ -90,5 +90,4 @@ static CGFloat const kSpaceToCoverStatusBars = 20.0f;
 - (void)displayColorLayer:(BOOL)display {
 	self.colorLayer.hidden = !display;
 }
-
 @end

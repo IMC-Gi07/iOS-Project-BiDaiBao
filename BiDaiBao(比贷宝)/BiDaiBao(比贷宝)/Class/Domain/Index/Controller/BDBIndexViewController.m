@@ -7,85 +7,39 @@
 //
 
 #import "BDBIndexViewController.h"
-#import "BDBIndexTableViewHeader.h"
 
 @interface BDBIndexViewController ()
-
-/**
- *  首页，表视图
- */
-@property (weak, nonatomic) IBOutlet UITableView *indexTableView;
-
-/**
- *	表格头部视图
- */
-@property(nonatomic,weak) BDBIndexTableViewHeader *indexTableViewHeader;
-
-/**
- *  导航右按钮点击处理器
- *
- *  @param buttonItem 右部按钮
- */
-- (void)rightBarButtonClickedAction:(UIBarButtonItem *)buttonItem;
-
-
-
-/**
- *	初始化表格视图
- */
-- (void)initIndexTableView;
 
 @end
 
 @implementation BDBIndexViewController
 
-#pragma mark - LifeCycle Methods
-- (instancetype)initWithCoder:(NSCoder *)coder{
-	self = [super initWithCoder:coder];
-	if (self) {
-		self.title = @"比贷宝";
-	}
-	return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-	UIImage *rightBarButtonImage = [UIImageWithName(@"index_nav_right") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:rightBarButtonImage style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonClickedAction:)];
-	
-	[self initIndexTableView];
+    
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-
-#pragma mark - Private Methods
-- (void)rightBarButtonClickedAction:(UIBarButtonItem *)buttonItem {
-	[self performSegueWithIdentifier:@"ToNoticeViewControllerSegue" sender:self];
-}
-
-- (void)initIndexTableView {
-	//indexTableView tableViewHeader
-	BDBIndexTableViewHeader *indexTableViewHeader = [[BDBIndexTableViewHeader alloc] init];
-	
-	self.indexTableViewHeader = indexTableViewHeader; 
-
-	//根据约束，实际计算Frame(适用于只能设定frame的地方)
-	CGSize indexTableViewHeaderFitSize = [_indexTableViewHeader systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-
-	//tableViewHead的高度设定，只能用Frame方式
-	_indexTableViewHeader.height = indexTableViewHeaderFitSize.height;
-
-	_indexTableView.tableHeaderView = _indexTableViewHeader;
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
+    // Return the number of sections.
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
+    // Return the number of rows in the section.
     return 0;
 }
 
@@ -98,9 +52,6 @@
     return cell;
 }
 */
-
-#pragma mark - UITableView Delegate Methods
-
 
 /*
 // Override to support conditional editing of the table view.
@@ -136,6 +87,14 @@
 }
 */
 
+/*
+#pragma mark - Navigation
 
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

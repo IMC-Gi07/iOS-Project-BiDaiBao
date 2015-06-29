@@ -44,15 +44,7 @@
  */
 @property(nonatomic,assign) CGFloat height;
 
-/**
- *  centerX
- */
-@property(nonatomic,assign) CGFloat centerX;
 
-/**
- *  centerY
- */
-@property(nonatomic,assign) CGFloat centerY;
 
 @end
 
