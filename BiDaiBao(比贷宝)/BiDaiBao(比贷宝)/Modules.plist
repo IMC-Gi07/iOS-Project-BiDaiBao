@@ -11,8 +11,6 @@
 		<string>tabbar_icon_index.png</string>
 		<key>icon_highlighted</key>
 		<string>tabbar_icon_index_highlighted.png</string>
-		<key>controller</key>
-		<string>BDBIndexViewController</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -23,8 +21,6 @@
 		<string>tabbar_icon_subject.png</string>
 		<key>icon_highlighted</key>
 		<string>tabbar_icon_subject_highlighted.png</string>
-		<key>controller</key>
-		<string>BDBSubjectViewController</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -35,8 +31,6 @@
 		<string>tabbar_icon_discovery.png</string>
 		<key>icon_highlighted</key>
 		<string>tabbar_icon_discovery_highlighted.png</string>
-		<key>controller</key>
-		<string>BDBDiscoveryViewController</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -47,8 +41,6 @@
 		<string>tabbar_icon_warning.png</string>
 		<key>icon_highlighted</key>
 		<string>tabbar_icon_warning_highlighted.png</string>
-		<key>controller</key>
-		<string>BDBWarningViewController</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -59,8 +51,6 @@
 		<string>tabbar_icon_user.png</string>
 		<key>icon_highlighted</key>
 		<string>tabbar_icon_user_highlighted.png</string>
-		<key>controller</key>
-		<string>BDBUserViewController</string>
 	</dict>
 </array>
 </plist>
